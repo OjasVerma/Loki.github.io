@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #273d31;
+    overflow-x: hidden;
+}
+.header{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header img{
+    width: 6vw;
+    height: 10vh;
+    border-radius: 20%;
+}
+.hero{
+    width: 100vw;
+    height: 50vh;   
+    background-image: url(hero.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .logo{
+    width:15vw;
+    background-image: url(hero-logo.png);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 35vh;
+    background-repeat: no-repeat;
+}
+.card{
+    width: max-content;
+    height: 50vh;
+    background-color: #e1b16b;
+    box-shadow: 0 0 100px 5px;
+}
+.container{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20vh;
+}
+.card img{
+    width: 30vw;
+    height:35vh;
+}
+.actions{
+    width: 30vw;
+    height: max-content;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .actions img{
+    width: 5vw;
+    cursor: pointer;
+    height: 7vh;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .3s;
+    animation: ease-in-out;
+}
+::selection{
+    color: orange;
+    background-color: black;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.footer{
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 6vh;
+    background-color: #eef0f3;
+    font-family: 'Montserrat', sans-serif;
+}
+@media (max-width:1400px){
+    .header img{
+        width: 20vw;
+    }
+    svg{
+        height: 6vh;
+        width: 6vw;
+    }
+}
+@media (max-width:1000px){
+    .hero{
+        margin-bottom: 10vh;
+    }
+    .container{
+        height: max-content;
+        flex-direction: column;
+        margin: 0;
+    }
+    .container .card{
+        margin-bottom: 10vh;
+        margin-bottom:10vh;
+        width: 70vw;
+    }
+    .card img{
+        width: 70vw;
+    }
+    .card .actions{
+        width: 70vw;
+    }
+    .card .actions img{
+        width: 8vw;
+    }
+}
+@media (max-width:500px){
+    .header img{
+        position: relative;
+        width: 20vw;
+    }
+    svg{
+        height: 6vh;
+        width: 6vw;
+    }
+}
+@media (max-height:550px){
+    .header{
+        height: 15vhh;
+    }
+    .header img{
+        width: 20vw;
+        height: 15vh;
+    }
+}
